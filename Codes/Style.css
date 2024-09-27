@@ -1,0 +1,246 @@
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #A682FF;
+}
+
+header {
+    background: #715AFF;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+    padding: 55px 0px;
+    margin: 0; /* Assure-toi qu'il n'y a pas de marge */
+    position: relative; /* ou fixe s'il doit être toujours visible */
+    z-index: 1000; /* Donne une priorité visuelle au menu */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+section {
+    margin-top: 20px; /* Ajuste cette marge pour espacer la section après le menu */
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #715AFF;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    float: left;
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu > li:hover > a {
+    background-color: #715AFF;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #715AFF;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.submenu li {
+    float: none;
+}
+
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    padding: 12px 16px;
+}
+
+.submenu li a:hover {
+    background-color: #715AFF;
+}                              
+
+section {
+    padding: 20px;
+    background: #5887FF;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #55C1FF;
+    color: black;
+    margin-top: 20px;
+}
+
+.fleche {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin: 50px auto;
+    width: 50px;
+    height: 50px;
+    background-color: #A682FF;
+    color: #064789;
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fleche:hover {
+    background-color: #555;
+    transform: scale(1.2);
+}
+
+.vinyle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#vinyle {
+    width: 100%; /* L'image s'adapte à la largeur du conteneur */
+    max-width: 300px; /* Limite la taille maximale à 300px */
+    height: auto; /* Maintient le ratio d'aspect */
+    border-radius: 50%; /* Assure que l'image reste ronde */
+    transition: transform 0.5s ease;
+    overflow: hidden; /* S'assure que l'image reste dans la forme ronde */
+    object-fit: cover; /* Gère l'ajustement de l'image sans la déformer */
+}
+
+.rotate {
+    animation: tourner 3s linear infinite;
+}
+
+@keyframes tourner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Le conteneur prend toute la largeur de l'écran */
+}
+
+#monGif {
+    max-width: 100%; /* L'image ou le GIF s'adapte à la taille de l'écran */
+    height: auto; /* Maintient le ratio d'aspect */
+    display: block; /* Supprime les espaces en bas des images */
+    object-fit: contain; /* Garde l'image complète sans la couper */
+}
+
+.merci-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Pour positionner le gif */
+}
+
+/* Media Queries pour ajuster les images sur les petits écrans */
+@media (max-width: 768px) {
+    #vinyle {
+        max-width: 200px; /* Réduit la taille du vinyle sur les écrans plus petits */
+    }
+    #monGif {
+        max-width: 90%; /* Adapte le GIF à 90% de la largeur de l'écran sur mobile */
+    }
+}
+/* Style général pour le menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: #5887FF;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #5887FF;
+}
+
+/* Styles pour le sous-menu (caché par défaut) */
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background-color: #5887FF;
+    padding: 0;
+}
+
+nav ul .submenu li {
+    display: block;
+}
+
+nav ul .submenu li a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+/* Afficher le sous-menu au survol */
+nav ul li:hover .submenu {
+    display: block;
+}
+
+
