@@ -1,0 +1,246 @@
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #2A1E5C; /* Couleur secondaire */
+    color: white; /* Texte contrastant */
+}
+
+header {
+    background: #EE4266; /* Couleur principale */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    padding: 55px 0px;
+    margin: 0;
+    position: relative;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+section {
+    margin-top: 20px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #2A1E5C; /* Couleur secondaire */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    float: left;
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: #EE4266; /* Couleur principale */
+}
+
+.menu > li:hover > a {
+    background-color: #EE4266;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #2A1E5C; /* Couleur secondaire */
+    min-width: 200px;
+    z-index: 1;
+}
+
+.submenu li {
+    float: none;
+}
+
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    padding: 12px 16px;
+    color: white;
+}
+
+.submenu li a:hover {
+    background-color: #EE4266;
+}                              
+
+section {
+    padding: 20px;
+    background: #2A1E5C; /* Couleur secondaire */
+    margin: 20px;
+    color: white; /* Texte blanc pour contraster */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #0A0F0D; /* Couleur de contraste */
+    color: white;
+    margin-top: 20px;
+}
+
+.fleche {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin: 50px auto;
+    width: 50px;
+    height: 50px;
+    background-color: #EE4266;
+    color: #0A0F0D;
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fleche:hover {
+    background-color: #555;
+    transform: scale(1.2);
+}
+
+.vinyle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#vinyle {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.2s;
+}
+
+.vinyle {
+    animation: rotation 5s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0A0F0D; /* Couleur de contraste */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+#monGif {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.merci-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Media Queries pour ajuster les images sur les petits écrans */
+@media (max-width: 768px) {
+    #vinyle {
+        max-width: 200px;
+    }
+    #monGif {
+        max-width: 90%;
+    }
+}
+
+/* Style général pour le menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    background-color: #EE4266;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #2A1E5C;
+}
+
+/* Styles pour le sous-menu (caché par défaut) */
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2A1E5C;
+    padding: 0;
+}
+
+nav ul .submenu li {
+    display: block;
+}
+
+nav ul .submenu li a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+/* Afficher le sous-menu au survol */
+nav ul li:hover .submenu {
+    display: block;
+}
