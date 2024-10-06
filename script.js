@@ -1,59 +1,59 @@
 // Liste des fichiers audio et leurs titres
 const chansons = [
     {
-        src: "../Musique/The Weeknd - Blinding Lights (Official Audio).mp3",
+        src: "Musique/The Weeknd - Blinding Lights (Official Audio).mp3",
         titre: "🎶The Weeknd - Blinding Lights🎶"
     },
     {
-        src: "../Musique/Heavy Is the Crown (Official Audio) - Linkin Park.mp3",
+        src: "Musique/Heavy Is the Crown (Official Audio) - Linkin Park.mp3",
         titre: "🎶Linkin Park - Heavy Is the Crown🎶"
     },
     {
-        src: "../Musique/Swimming Pools (Drank) (Extended Version).mp3",
+        src: "Musique/Swimming Pools (Drank) (Extended Version).mp3",
         titre: "🎶Kendrick Lamar - Swimming Pools🎶"
     },
     {
-        src: "../Musique/barcelona92.mp3",
+        src: "Musique/barcelona92.mp3",
         titre: "🎶Green Montana - Barcelona92 Feat. SDM🎶"
     },
     {
-        src: "../Musique/Deen Burbigo - Immunité Diplomatique (Feat. Alpha Wann).mp3",
+        src: "Musique/Deen Burbigo - Immunité Diplomatique (Feat. Alpha Wann).mp3",
         titre: "🎶Deen Burbigo - Immunité Diplomatique Feat. Alpha Wann🎶"
     },
     {
-        src: "../Musique/Lamborghini benie.mp3",
+        src: "Musique/Lamborghini benie.mp3",
         titre: "🎶Freeze Corleone - Lamborghini Benie🎶"
     },
     {
-        src: "../Musique/Lefa - Métaverse (clip officiel).mp3",
+        src: "Musique/Lefa - Métaverse (clip officiel).mp3",
         titre: "🎶Lefa - Métaverse🎶"
     },
     {
-        src: "../Musique/POP SMOKE - MANNEQUIN ft. Lil Tjay (Official Lyric Video).mp3",
+        src: "Musique/POP SMOKE - MANNEQUIN ft. Lil Tjay (Official Lyric Video).mp3",
         titre: "🎶Pop Smoke - Mannequin Feat. Lil Tjay🎶"
     },
     {
-        src: "../Musique/Lex Luthor (feat. Luther).mp3",
+        src: "Musique/Lex Luthor (feat. Luther).mp3",
         titre: "🎶NeS - Lex Luthor Feat Luther🎶"
     },
     {
-        src: "../Musique/LAYLOW - SPECIAL feat NEKFEU & FOUSHEÉ.mp3",
+        src: "Musique/LAYLOW - SPECIAL feat NEKFEU & FOUSHEÉ.mp3",
         titre: "🎶Laylow - SPECIAL Feat Nekfeu & Foushe🎶"
     },
     {
-        src: "../Musique/Linkin Park & JAY-Z - Jigga What / Faint.mp3",
+        src: "Musique/Linkin Park & JAY-Z - Jigga What / Faint.mp3",
         titre: "🎶Linkin Park & JAY-Z - Jigga What / Faint🎶"
     },
     {
-        src: "../Musique/Bekar - Finalement feat SDM (clip officiel).mp3",
+        src: "Musique/Bekar - Finalement feat SDM (clip officiel).mp3",
         titre: "🎶Bekar - Finalement Feat SDM🎶"
     },
     {
-        src: "../Musique/Metro Boomin, Future, Chris Brown - Superhero.mp3",
+        src: "Musique/Metro Boomin, Future, Chris Brown - Superhero.mp3",
         titre: "🎶Metro Boomin - Superhero Feat Future & Chris Brown 🎶"
     },
     {
-        src: "..//Musique/Future, Metro Boomin, Kendrick Lamar - Like That (Official Audio).mp3",
+        src: "Musique/Future, Metro Boomin, Kendrick Lamar - Like That (Official Audio).mp3",
         titre: "🎶Future & Metro Boomin - Like That Feat Kendrick Lamar 🎶"
     }
 ];
